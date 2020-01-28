@@ -1,0 +1,50 @@
+/* =======================
+   ACCORDION STYLES
+   ======================= */
+   .accordion-title {
+    position: relative;
+    display: block;
+    padding: 1.25rem 1rem;
+    border: none !important;
+    border-bottom: 0;
+    font-size: 2.1em !important;
+    font-weight: 600;
+    line-height: 1;
+    color: #575755 !important;
+    letter-spacing: -1px;
+}
+
+.accordion-title:hover, .accordion-title:focus {
+    background-color: transparent !important;
+}
+
+.accordion {
+    margin-left: 0;
+    background: transparent !important;
+    list-style-type: none;
+}
+
+
+ul.accordion a:hover, a:focus {
+    color: salmon !important;
+    text-decoration: none !important;
+}
+
+.accordion-content {
+    display: none;
+    padding: 2rem !important;
+    border: 0 !important;
+    border-bottom: 0;
+    background-color: transparent !important;
+    color: #0a0a0a;
+}
+
+.accordion-content-container {
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 2rem;
+}
+
+ul.accordion li.accordion-item {
+    margin-bottom: 2em;
+}
