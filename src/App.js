@@ -13,42 +13,35 @@ class App extends React.Component {
   render() {
     return (
       <div className="content">
-        <div className="row">
-          <div className="columns">
-            <h2>Accordion</h2>
-            <p>Accordions lets you organize and navigate multiple documents in a single container. Highly useful for switching between items in the container specially when you have a large amount of content.</p>
-          </div>
+        <div className="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+          <button className="menu-icon" type="button" data-toggle="responsive-menu"></button>
+          <div className="title-bar-title">Menu</div>
         </div>
 
-        <div className="row">
-          <div className="columns">
-            <ul className="accordion" data-accordion>
-          <li className="accordion-item is-active" data-accordion-item>
-            <a href="#" className="accordion-title">Accordion 1</a>
-            <div className="accordion-content" data-tab-content >
-              <p>Panel 1. Lorem ipsum dolor</p>
-              <a href="#">Nowhere to Go</a>
+        <div className="top-bar" id="responsive-menu">
+            <div className="top-bar-left">
+              <ul className="dropdown menu" data-dropdown-menu>
+                <li className="menu-text">Site Title</li>
+                <li>
+                  <a href="#">One</a>
+                  <ul className="menu vertical">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
             </div>
-          </li>
-          <li className="accordion-item" data-accordion-item>
-            <a href="#" className="accordion-title">Accordion 2</a>
-            <div className="accordion-content" data-tab-content>
-              <textarea></textarea>
-              <button className="button">I do nothing!</button>
+
+            <div className="top-bar-right">
+              <ul className="menu">
+                <li><input type="search" placeholder="Search" /></li>
+                <li><button type="button" className="button">Search</button></li>
+              </ul>
             </div>
-          </li>
-          <li className="accordion-item" data-accordion-item>
-            <a href="#" className="accordion-title">Accordion 3</a>
-            <div className="accordion-content" data-tab-content>
-              Type your name!
-              <input type="text"></input>
-            </div>
-          </li>
-        </ul>
           </div>
-        </div>
-
-
       </div>// Wrap DIV
     );
   }
