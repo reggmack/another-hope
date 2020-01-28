@@ -1,3 +1,22 @@
 
 @import './scss/colors';
 @import './scss/accordion';
+
+
+.content {
+    width: 95%;
+    max-width: 780px;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    margin: 0 auto 2em;
+    background: #fff;
+    border-radius: .5em;
+    /* box-shadow: 0 3px rgba(0,0,0, .1); */
+    overflow: hidden;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .not-found {
+    text-align: center;
+  }
