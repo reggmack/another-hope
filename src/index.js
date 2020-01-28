@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'foundation-sites/dist/css/foundation.css';
+import 'foundation-sites/dist/js/foundation';
 import './index.css';
+import './hope.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
