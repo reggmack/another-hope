@@ -1,0 +1,30 @@
+.sermon-accordion-content {
+    width: 95%;
+    max-width: 780px;
+    padding: 0 1em;
+    margin: 0 auto .5em;
+    background: #fff;
+    border-radius: .5em;
+    /* box-shadow: 0 3px rgba(0,0,0, .1); */
+    overflow: hidden;
+  }
+
+  .sermon-accordion-content ul {
+    margin-bottom: 1em !important;
+  }
+  
+  .sermon-accordion-content li {
+    list-style-type: none !important;
+  }
+
+  .accordion-title {
+    font-size: 1.5em !important;
+    letter-spacing: -1px;
+    text-decoration: none !important;
+}
+
+.accordion-title:hover, .accordion-title:focus {
+    background-color: transparent !important;
+    color: firebrick;
+}
+

@@ -1,6 +1,7 @@
 @import './scss/navigation';
 @import './scss/colors';
-@import './scss/accordion';
+@import './scss/sermon';
+/* @import './scss/accordion'; */
 
 /* ================================= 
   ELEMENT STYLES
@@ -8,6 +9,13 @@
 
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 

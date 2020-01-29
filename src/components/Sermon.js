@@ -15,11 +15,12 @@ class Sermon extends React.Component {
 
   render() {
     return (
-      <div className="content">
-        <ul >{ this.state.sermonScriptures.map(function(scripture, i){
+      <div className="sermon-accordion-content">
+        <h4>{ this.state.sermonTitle }</h4>
+        <ul>{ this.state.sermonScriptures.map(function(scripture, i){
             return <li key={i}>{ scripture }</li>
           })}</ul>
-        <p className="font-italic">Listen to the &quot;{ this.state.sermonTitle }&quot; sermon by { this.state.sermonSpeaker }</p>
+        <p className="sermonIntro">Listen to the &quot;{ this.state.sermonTitle }&quot; sermon by { this.state.sermonSpeaker }</p>
         
         <audio controls src="SoundHelix-Song-1.mp3" type="audio/mpeg">
           Your browser does not support the audio tag.
