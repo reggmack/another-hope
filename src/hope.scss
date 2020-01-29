@@ -1,8 +1,19 @@
-
+@import './scss/navigation';
 @import './scss/colors';
 @import './scss/accordion';
 
+/* ================================= 
+  ELEMENT STYLES
+==================================== */
 
+* {
+  box-sizing: border-box;
+}
+
+
+/* ================================= 
+  LAYOUT & PAGE STYLES
+==================================== */
 .content {
     width: 95%;
     max-width: 780px;
@@ -17,6 +28,11 @@
     padding-right: 0 !important;
   }
 
+  /* IMAGES -------- */
+
+  /* ICONS -------- */
+
+  /* MISC MOVE LATER -------- */
   .not-found {
     text-align: center;
   }

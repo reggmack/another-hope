@@ -1,0 +1,14 @@
+.main-nav a {
+  font-size: .95em !important;
+  color: #222 !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  display: block !important;
+  padding: 1em !important;
+  transition: .2s !important;
+}
+.main-nav a:hover,
+.main-nav .active {
+  color: #fff !important;
+  background: #3b80d1 !important;
+}

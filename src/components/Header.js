@@ -11,10 +11,10 @@ const Header = () => (
 
         <div className="top-bar" id="responsive-menu" data-sticky-container data-sticky data-options="marginTop: 0" style={{ width: "100%", marginTop: "0px" }}>
             <div className="top-bar-left">
-              <ul className="dropdown menu" data-dropdown-menu>
+              <ul className="dropdown menu main-nav" data-dropdown-menu>
                 <li className="menu-text">Site Title</li>
-                <li><NavLink exact to="/" activeStyle={{ background: 'white' }}>Home</NavLink></li>
-                <li><NavLink to="/announcements" activeClassName="actyMcActiveFace">Announcements</NavLink></li>
+                <li><NavLink exact to="/">Home</NavLink></li>
+                <li><NavLink to="/announcements">Announcements</NavLink></li>
                 <li><NavLink to="/contacts">Contacts</NavLink></li>
                 <li><NavLink to="/sermons">Sermons</NavLink></li>
               </ul>
