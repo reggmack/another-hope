@@ -1,6 +1,11 @@
 import React from 'react';
+import $ from 'jquery';
  
 class Contacts extends React.Component {
+
+  /* componentDidMount(){
+    $(document).foundation();
+  }; */
 
   state = {
     title: "Contacts Directory" 

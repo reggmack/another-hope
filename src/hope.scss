@@ -1,6 +1,7 @@
 @import './scss/navigation';
 @import './scss/colors';
 @import './scss/sermon';
+@import './scss/announcements';
 /* @import './scss/accordion'; */
 
 /* ================================= 
@@ -16,6 +17,10 @@ h2,
 ul {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+li {
+  list-style-type: none;
 }
 
 

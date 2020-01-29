@@ -1,5 +1,10 @@
 import React from 'react'
+import $ from 'jquery';
 class Sermon extends React.Component {
+
+  componentDidMount(){
+    $(document).foundation();
+  };
 
   state = {
     sermonID: 0,

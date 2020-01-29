@@ -1,6 +1,11 @@
 import React from 'react';
+import $ from 'jquery';
 import Sermon from './Sermon';
 class Announcement extends React.Component {
+
+  componentDidMount(){
+    $('.accordion').foundation();
+  };
 
   state = {
     title: "Sermons Directory",
