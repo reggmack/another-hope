@@ -1,8 +1,13 @@
+@import '../node_modules/foundation-sites/assets/foundation.scss';
+
+// @include foundation-grid;
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+
 @import './scss/navigation';
 @import './scss/colors';
 @import './scss/sermon';
 @import './scss/announcements';
-/* @import './scss/accordion'; */
 
 /* ================================= 
   ELEMENT STYLES
@@ -39,6 +44,17 @@ li {
     overflow: hidden;
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+
+  .content-home {
+    width: 95%;
+    max-width: 1000px;
+    padding: 2em;
+    margin: 1em auto 2em;
+    background: salmon;
+    border-radius: .5em;
+    /* box-shadow: 0 3px rgba(0,0,0, .1); */
+    overflow: hidden;
   }
 
   /* IMAGES -------- */
