@@ -11,9 +11,16 @@ const Header = () => (
 
         <div className="top-bar" id="responsive-menu" data-sticky-container data-sticky data-options="marginTop: 0" style={{ width: "100%", marginTop: "0px" }}>
             <div className="top-bar-left">
-              <ul className="dropdown menu main-nav" data-dropdown-menu>
+              <ul className="dropdown menu" data-dropdown-menu>
                 <li className="menu-text">Site Title</li>
+                
+              </ul>
+            </div>
+
+            <div className="top-bar-middle">
+              <ul className="menu main-nav">
                 <li><NavLink exact to="/">Home</NavLink></li>
+                <li><NavLink to="/about">About</NavLink></li>
                 <li><NavLink to="/announcements">Announcements</NavLink></li>
                 <li><NavLink to="/contacts">Contacts</NavLink></li>
                 <li><NavLink to="/sermons">Sermons</NavLink></li>
@@ -21,10 +28,7 @@ const Header = () => (
             </div>
 
             <div className="top-bar-right">
-              <ul className="menu">
-                <li><input type="search" placeholder="Search" /></li>
-                <li><button type="button" className="button">Search</button></li>
-              </ul>
+                <i className="material-icons icn-error">account_circle</i>
             </div>
           </div>
       </div>

@@ -9,6 +9,7 @@ import {
 // App Components
 import Header from './components/Header';
 import Home from './components/Home';
+import About from './components/About';
 import Announcements from './components/Announcements';
 import Contacts from './components/Contacts';
 import Sermons from './components/Sermons';
@@ -30,6 +31,7 @@ class App extends React.Component {
           <Header />
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/about" render={ () => <About /> } />
             <Route path="/announcements" render={ () => <Announcements /> } />
             <Route path="/contacts" render={ () => <Contacts /> } />
             <Route path="/sermons" render={ () => <Sermons /> } />

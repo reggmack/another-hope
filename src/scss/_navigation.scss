@@ -12,3 +12,27 @@
   color: #fff !important;
   background: #3b80d1 !important;
 }
+
+.top-bar-left, .top-bar-right, .top-bar-middle {
+  justify-content: space-between !important;
+}
+
+.top-bar-left, .top-bar-right {
+  width: 100px !important;
+}
+
+
+
+.top-bar .top-bar-left {
+  flex-basis: auto !important;
+  margin-right: unset !important;
+  flex: unset !important;
+}
+
+.top-bar .top-bar-right {
+  flex-basis: auto !important;
+  margin-left: unset !important;
+  flex: unset !important;
+  text-align: right !important;
+  padding-right: 10px;
+}
