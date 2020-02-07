@@ -8,6 +8,7 @@ import {
 
 // App Components
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import Announcements from './components/Announcements';
@@ -31,12 +32,13 @@ class App extends React.Component {
           <Header />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/about" render={ () => <About /> } />
+            <Route path="/about" component={About} />
             <Route path="/announcements" render={ () => <Announcements /> } />
             <Route path="/contacts" render={ () => <Contacts /> } />
             <Route path="/sermons" render={ () => <Sermons /> } />
             <Route component={NotFound} />
           </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
     );

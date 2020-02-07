@@ -1,0 +1,40 @@
+/* ===============
+   MIXINS 
+   =============== */
+@mixin text-sub-hdr {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif !important;
+    font-weight: bold;
+    font-style: normal !important;
+}
+
+@mixin text-plain {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-style: normal;
+    color: #666666;
+    font-size: .9rem;
+    font-weight: normal;
+
+}
+
+@mixin text-red-hdr {
+    font-weight: bold;
+    color: $nhbc-red-light !important;
+}
+
+
+  /* TEXT & FONTS -------- */
+.text-sub-hdr {
+    @include text-sub-hdr;
+}
+
+.text-red-hdr {
+    @include text-red-hdr;
+}
+
+.text-plain {
+    @include text-plain;
+}
+
+.red {
+    color: $nhbc-red !important;
+}

@@ -4,10 +4,13 @@
 @include foundation-flex-classes;
 @include foundation-flex-grid;
 
-@import './scss/navigation';
 @import './scss/colors';
+@import './scss/mixins';
+@import './scss/navigation';
+@import './scss/events';
 @import './scss/sermon';
 @import './scss/announcements';
+@import './scss/footer';
 
 /* ================================= 
   ELEMENT STYLES
@@ -15,6 +18,17 @@
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/img/dark-grey-terrazzo.png);
+  background-repeat: repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
@@ -28,6 +42,11 @@ li {
   list-style-type: none;
 }
 
+input {
+  border: 2px solid #e5c177 !important;
+  border-radius: 1px !important; 
+}
+
 
 /* ================================= 
   LAYOUT & PAGE STYLES
@@ -36,14 +55,13 @@ li {
     width: 95%;
     max-width: 780px;
     padding-bottom: 2em;
-    padding-top: 2em;
-    margin: 0 auto 2em;
+    padding: 2em;
+    margin: 1em auto 2em;
     background: #fff;
     border-radius: .5em;
     /* box-shadow: 0 3px rgba(0,0,0, .1); */
     overflow: hidden;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    border: 1px solid $nhbc-gold;
   }
 
   .content-home {
@@ -55,10 +73,36 @@ li {
     border-radius: .5em;
     /* box-shadow: 0 3px rgba(0,0,0, .1); */
     overflow: hidden;
+    border: 1px solid $nhbc-gold;
   }
+
+  .content-about {
+    width: 95%;
+    max-width: 1000px;
+    margin: 2em auto 2em;
+    background: #fff;
+  }
+
+  .border-silver {
+    background-image: url("./assets/img/border-sliver-bars.png");
+    background-repeat: repeat-x;
+    height: 20px;
+    border-bottom: 1px solid $nhbc-gold;
+    /* background-color: black; */
+  }
+
+  /* .top-bar {
+    background-image: url("./assets/img/border-gold-20.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+  } */
 
   .home-main {
     padding-right: 2em;
+  }
+
+  .footer {
+    margin-top: auto;
   }
 
   /* IMAGES -------- */
@@ -69,3 +113,26 @@ li {
   .not-found {
     text-align: center;
   }
+
+
+  /* COURSE NAV -------- */
+
+.course-nav li {
+  display: inline-block;
+}
+.course-nav li + li {
+  margin-left: .6em;
+}
+.course-nav a {
+  font-size: .85em;
+  color: #7d7d7d;
+  padding: .2em .8em;
+  border-radius: .25em;
+  background: #eaebeb;
+  transition: .2s;
+}
+.course-nav a:hover,
+.course-nav a.active {
+  color: #fff;
+  background: #39add1;
+}

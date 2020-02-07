@@ -1,4 +1,4 @@
-.main-nav a {
+/* .main-nav a {
   font-size: .95em !important;
   color: #222 !important;
   text-align: center !important;
@@ -6,11 +6,62 @@
   display: block !important;
   padding: 1em !important;
   transition: .2s !important;
+} */
+
+.main-nav a {
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-size: 1.1em !important;
+  color: #000 !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  display: block !important;
+  padding: 1em !important;
+  transition: .2s !important;
+  font-style: normal !important;
+  /* font-weight: bold; */
 }
 .main-nav a:hover,
 .main-nav .active {
-  color: #fff !important;
-  background: #3b80d1 !important;
+  color:  $nhbc-red !important;
+  /* background: $nhbc-gold !important; */
+  background-image: url("../assets/img/halo.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.sub-nav a {
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-size: 1em !important;
+  color: #000 !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  display: block !important;
+  padding: 1em !important;
+  transition: .2s !important;
+  font-style: normal !important;
+  /* font-weight: bold; */
+}
+.sub-nav a:hover,
+.sub-nav .active {
+  color:  $nhbc-red !important;
+  /* background: $nhbc-gold !important; */
+  background-image: url("../assets/img/halo.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.top-bar {
+  background-color: #fff !important; // #771718
+  color: #000 !important;
+  border-bottom: 7px solid $nhbc-red-light;
+}
+
+.top-bar-middle {
+  color: #000 !important;
+}
+
+.top-bar ul {
+  background-color: transparent !important;
 }
 
 .top-bar-left, .top-bar-right, .top-bar-middle {

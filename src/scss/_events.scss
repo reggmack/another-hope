@@ -1,0 +1,29 @@
+.event-date {
+    margin-bottom: .125rem !important;
+}
+
+.event-title {
+    margin-bottom: .25rem !important;
+}
+
+.event-msg {
+    margin-bottom: .5rem !important;
+}
+
+.event-time {
+    color: $nhbc-red-light;
+}
+
+.event-msg-detail {
+    color: $nhbc-red-light;
+    font-style: italic;
+    margin-bottom: .5rem;
+    font-size: .85rem !important;
+    border-top: 1px dotted $nhbc-red-light;
+    border-bottom: 1px dotted $nhbc-red-light;
+    padding: .25em 0 !important;
+}
+
+.event-logistics {
+    @include text-plain;
+}

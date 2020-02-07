@@ -1,0 +1,31 @@
+.footer {
+    background-color: #252525;
+    color: #fff;
+}
+
+.footer-top {
+    background-color: #771718;
+    border-top: 1px solid $nhbc-gold;
+    border-bottom: 4px solid #333;
+}
+
+.content-footer {
+    width: 95%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2.5em;
+}
+
+.content-footer-top {
+    width: 95%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.25em;
+}
+
+
+@media screen and (max-width: 39.9375em) {
+    .footer-column {
+        margin-bottom: 1.5em;
+    }
+}

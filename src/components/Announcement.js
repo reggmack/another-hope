@@ -20,11 +20,11 @@ class Announcement extends React.Component {
   render() {
     return (
       <div className="callout small">
-        <h5>{ this.state.announcementTitle } - { this.state.announcementEventDate }</h5>
+        <h5><span className="ann-title">{ this.state.announcementTitle }</span> <span className="ann-text-plain">-</span> <span className="ann-date">{ this.state.announcementEventDate }</span></h5>
         <p className="ann-msg">{ this.state.announcementMessage }</p>
         <p className="ann-msg-detail">{ this.state.announcementMessageDetail }</p>
         <ul className="ann-logistics">
-          <li>Time: { this.state.announcementEventTime }</li>
+          <li><span className="ann-event-time">Time: { this.state.announcementEventTime }</span></li>
           <li>Date: { this.state.announcementEventDate }</li>
           <li>Location: { this.state.announcementEventLocation }</li>
         </ul>

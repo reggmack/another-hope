@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import EventCalendar from './EventCalendar';
+
 /* import { Link } from 'react-router-dom'; */
  
 class Home extends Component {    
@@ -21,7 +23,7 @@ class Home extends Component {
         </div> */}
 
         <div class="row">
-          <div class="home-main columns small-12 medium-8">
+          <div class="home-main columns small-12 large-8">
             {/* <img src="https://goo.gl/maps/FezGdPGx43dMmVtw5" alt="New Hope Missionary Baptist Church, Portland Tennessee" height="42" width="42" /> */}
 
             <iframe src="https://www.google.com/maps/embed?pb=!4v1580433865633!6m8!1m7!1sHNIlzGn1wkeL03wNBecAmA!2m2!1d36.59239704692982!2d-86.56791622655072!3f264.06085!4f0!5f0.7820865974627469" width="100%" height="450" frameborder="0" style={{ border:0 }} allowfullscreen=""></iframe> 
@@ -38,7 +40,7 @@ class Home extends Component {
             <p>Pastor Dennis Page</p>
           </div>
           <div class="columns">
-            <h5>Event Calendar</h5>
+            <EventCalendar></EventCalendar>
           </div>
         </div>
 

@@ -20,7 +20,7 @@ class Announcements extends React.Component {
   render() {
     return (
       <div className="content">
-        <h3>Recent Announcements</h3><hr />
+        <h3 className="red">Recent Announcements</h3><hr />
 
         <Announcement></Announcement>
 

@@ -5,18 +5,33 @@
     padding-left: 1.5rem;
 }
 
+.ann-text-plain {
+    color: #000 !important;
+    font-weight: normal;
+}
+
+.ann-title {
+    font-weight: bold;
+}
+
+.ann-date {
+    color: $nhbc-red-light;
+}
+
+.ann-event-time {
+    color: $nhbc-red-light;
+}
+
 .ann-msg {
     margin-bottom: .5rem;
 }
 
 .ann-msg-detail {
-    color: firebrick;
+    color: $nhbc-red-light;
     font-style: italic;
     margin-bottom: .5rem;
 }
 
 .ann-logistics {
-    font-size: small;
-    line-height: 1.6;
-    color: #777;
+    @include text-plain;
 }

@@ -30,19 +30,19 @@ class Announcement extends React.Component {
           <div className="columns">
             <ul className="accordion" data-accordion>
           <li className="accordion-item is-active" data-accordion-item>
-            <a href="#" className="accordion-title">{ this.state.sermonDate } - { this.state.sermonTitle }</a>
+            <a href="#" className="accordion-title"><span className="sermon-date">{ this.state.sermonDate }</span> <span className="sermon-text-plain">-</span> <span className="sermon-title">{ this.state.sermonTitle }</span></a>
             <div className="accordion-content" data-tab-content >
               <Sermon></Sermon>
             </div>
           </li>
           <li className="accordion-item" data-accordion-item>
-            <a href="#" className="accordion-title">{ this.state.sermonDate } - { this.state.sermonTitle }</a>
+            <a href="#" className="accordion-title"><span className="sermon-date">{ this.state.sermonDate }</span> <span className="sermon-text-plain">-</span> <span className="sermon-title">{ this.state.sermonTitle }</span></a>
             <div className="accordion-content" data-tab-content>
               <Sermon></Sermon>
             </div>
           </li>
           <li className="accordion-item" data-accordion-item>
-            <a href="#" className="accordion-title">{ this.state.sermonDate } - { this.state.sermonTitle }</a>
+            <a href="#" className="accordion-title"><span className="sermon-date">{ this.state.sermonDate }</span> <span className="sermon-text-plain">-</span> <span className="sermon-title">{ this.state.sermonTitle }</span></a>
             <div className="accordion-content" data-tab-content>
               <Sermon></Sermon>
             </div>
